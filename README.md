@@ -56,6 +56,54 @@ Contains encoding names, like 'us-ascii', 'iso8859-1' etc.
 00000040  38 52 00 57 69 6e 64 6f  77 73 2d 31 32 35 32 00  |8R.Windows-1252.|
 ```
 
+### ttbl138d
+Most likely contains table for uppercase conversion
+```
+00000000  00 09 00 01 e0 00 00 00  00 00 00 ff 00 00 00 00  |................|
+00000010  00 08 00 00 00 08 00 00  01 1a 00 01 02 03 04 05  |................|
+00000020  06 07 08 09 0a 0b 0c 0d  0e 0f 10 11 12 13 14 15  |................|
+00000030  16 17 18 19 1a 1b 1c 1d  1e 1f 20 21 22 23 24 25  |.......... !"#$%|
+00000040  26 27 28 29 2a 2b 2c 2d  2e 2f 30 31 32 33 34 35  |&'()*+,-./012345|
+00000050  36 37 38 39 3a 3b 3c 3d  3e 3f 40 41 42 43 44 45  |6789:;<=>?@ABCDE|
+00000060  46 47 48 49 4a 4b 4c 4d  4e 4f 50 51 52 53 54 55  |FGHIJKLMNOPQRSTU|
+00000070  56 57 58 59 5a 5b 5c 5d  5e 5f 60 41 42 43 44 45  |VWXYZ[\]^_`ABCDE|
+00000080  46 47 48 49 4a 4b 4c 4d  4e 4f 50 51 52 53 54 55  |FGHIJKLMNOPQRSTU|
+00000090  56 57 58 59 5a 7b 7c 7d  7e 7f 80 81 82 83 84 85  |VWXYZ{|}~.......|
+000000a0  86 87 88 89 8a 8b 8c 8d  8e 8f 90 91 92 93 94 95  |................|
+000000b0  96 97 98 99 8a 9b 8c 9d  8e 9f a0 a1 a2 a3 a4 a5  |................|
+000000c0  a6 a7 a8 a9 aa ab ac ad  ae af b0 b1 b2 b3 b4 b5  |................|
+000000d0  b6 b7 a8 b9 ba bb bc bd  be bf c0 c1 c2 c3 c4 c5  |................|
+000000e0  c6 c7 c8 c9 ca cb cc cd  ce cf d0 d1 d2 d3 d4 d5  |................|
+000000f0  d6 d7 d8 d9 da db dc dd  de df c0 c1 c2 c3 c4 c5  |................|
+00000100  c6 c7 c8 c9 ca cb cc cd  ce cf d0 d1 d2 d3 d4 d5  |................|
+00000110  d6 d7 d8 d9 da db dc dd  de df                    |..........|
+```
+
+### ttbl138e
+Most likely contains table for lowercase conversion
+```
+00000000  00 09 00 01 e0 00 00 00  00 00 00 ff 00 00 00 00  |................|
+00000010  00 08 00 00 00 08 00 00  01 1a 00 01 02 03 04 05  |................|
+00000020  06 07 08 09 0a 0b 0c 0d  0e 0f 10 11 12 13 14 15  |................|
+00000030  16 17 18 19 1a 1b 1c 1d  1e 1f 20 21 22 23 24 25  |.......... !"#$%|
+00000040  26 27 28 29 2a 2b 2c 2d  2e 2f 30 31 32 33 34 35  |&'()*+,-./012345|
+00000050  36 37 38 39 3a 3b 3c 3d  3e 3f 40 61 62 63 64 65  |6789:;<=>?@abcde|
+00000060  66 67 68 69 6a 6b 6c 6d  6e 6f 70 71 72 73 74 75  |fghijklmnopqrstu|
+00000070  76 77 78 79 7a 5b 5c 5d  5e 5f 60 61 62 63 64 65  |vwxyz[\]^_`abcde|
+00000080  66 67 68 69 6a 6b 6c 6d  6e 6f 70 71 72 73 74 75  |fghijklmnopqrstu|
+00000090  76 77 78 79 7a 7b 7c 7d  7e 7f 80 81 82 83 84 85  |vwxyz{|}~.......|
+000000a0  86 87 88 89 9a 8b 9c 8d  9e 8f 90 91 92 93 94 95  |................|
+000000b0  96 97 98 99 9a 9b 9c 9d  9e 9f a0 a1 a2 a3 a4 a5  |................|
+000000c0  a6 a7 b8 a9 aa ab ac ad  ae af b0 b1 b2 b3 b4 b5  |................|
+000000d0  b6 b7 b8 b9 ba bb bc bd  be bf e0 e1 e2 e3 e4 e5  |................|
+000000e0  e6 e7 e8 e9 ea eb ec ed  ee ef f0 f1 f2 f3 f4 f5  |................|
+000000f0  f6 f7 f8 f9 fa fb fc fd  fe ff e0 e1 e2 e3 e4 e5  |................|
+00000100  e6 e7 e8 e9 ea eb ec ed  ee ef f0 f1 f2 f3 f4 f5  |................|
+00000110  f6 f7 f8 f9 fa fb fc fd  fe ff                    |..........|
+```
+
+
+
 ## Links
 - prc-tools remix https://github.com/jichu4n/prc-tools-remix
 - par utility for creating and manipulating .prc and .pdb files http://djw.org/product/palm/par/index.html
