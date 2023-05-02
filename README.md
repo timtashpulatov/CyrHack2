@@ -152,6 +152,8 @@ Contains encoding names, like 'us-ascii', 'iso8859-1' etc.
 ```
 
 ### ttbl138c
+Header ends with offset to the end of resource (01ce).
+Next are offsets to records (005e, 0144, 0158, 0000, 0186).
 ```
 00000000  00 09 00 04 80 00 00 00  00 00 21 22 00 00 ff ff  |..........!"....|
 00000010  00 08 00 00 00 08 00 00  01 ce 00 5e 01 44 01 58  |...........^.D.X|
@@ -181,7 +183,7 @@ Contains encoding names, like 'us-ascii', 'iso8859-1' etc.
 00000190  c3 c4 c5 c6 c7 c8 c9 ca  cb cc cd ce cf d0 d1 d2  |................|
 000001a0  d3 d4 d5 d6 d7 d8 d9 da  db dc dd de df e0 e1 e2  |................|
 000001b0  e3 e4 e5 e6 e7 e8 e9 ea  eb ec ed ee ef f0 f1 f2  |................|
-000001c0  f3 f4 f5 f6 f7 f8 f9 fa  fb fc fd fe ff b8        |..............|
+000001c0  f3 f4 f5 f6 f7 f8 f9 fa  fb fc fd fe ff b8        |.............ё|
 ```
 
 ### ttbl138d
