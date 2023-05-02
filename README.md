@@ -225,11 +225,11 @@ Most likely contains table for lowercase conversion
 000000a0  86 87 88 89 9a 8b 9c 8d  9e 8f 90 91 92 93 94 95  |................|
 000000b0  96 97 98 99 9a 9b 9c 9d  9e 9f a0 a1 a2 a3 a4 a5  |................|
 000000c0  a6 a7 b8 a9 aa ab ac ad  ae af b0 b1 b2 b3 b4 b5  |................|
-000000d0  b6 b7 b8 b9 ba bb bc bd  be bf e0 e1 e2 e3 e4 e5  |................|
-000000e0  e6 e7 e8 e9 ea eb ec ed  ee ef f0 f1 f2 f3 f4 f5  |................|
-000000f0  f6 f7 f8 f9 fa fb fc fd  fe ff e0 e1 e2 e3 e4 e5  |................|
-00000100  e6 e7 e8 e9 ea eb ec ed  ee ef f0 f1 f2 f3 f4 f5  |................|
-00000110  f6 f7 f8 f9 fa fb fc fd  fe ff                    |..........|
+000000d0  b6 b7 b8 b9 ba bb bc bd  be bf e0 e1 e2 e3 e4 e5  |..........абвгде|
+000000e0  e6 e7 e8 e9 ea eb ec ed  ee ef f0 f1 f2 f3 f4 f5  |жзийклмнопрстуфх|
+000000f0  f6 f7 f8 f9 fa fb fc fd  fe ff e0 e1 e2 e3 e4 e5  |цчшщъыьэюяабвгде|
+00000100  e6 e7 e8 e9 ea eb ec ed  ee ef f0 f1 f2 f3 f4 f5  |жзийклмнопрстуфх|
+00000110  f6 f7 f8 f9 fa fb fc fd  fe ff                    |цчшщъыьэюя|
 ```
 
 ### ttbl138f
