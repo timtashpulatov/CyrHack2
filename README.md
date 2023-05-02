@@ -204,9 +204,9 @@ Most likely contains table for uppercase conversion
 000000c0  a6 a7 a8 a9 aa ab ac ad  ae af b0 b1 b2 b3 b4 b5  |..Ё.............|
 000000d0  b6 b7 a8 b9 ba bb bc bd  be bf c0 c1 c2 c3 c4 c5  |..Ё.............|
 000000e0  c6 c7 c8 c9 ca cb cc cd  ce cf d0 d1 d2 d3 d4 d5  |................|
-000000f0  d6 d7 d8 d9 da db dc dd  de df c0 c1 c2 c3 c4 c5  |................|
+000000f0  d6 d7 d8 d9 da db dc dd  de df c0 c1 c2 c3 c4 c5  |.........Я......|
 00000100  c6 c7 c8 c9 ca cb cc cd  ce cf d0 d1 d2 d3 d4 d5  |................|
-00000110  d6 d7 d8 d9 da db dc dd  de df                    |..........|
+00000110  d6 d7 d8 d9 da db dc dd  de df                    |.........Я|
 ```
 
 ### ttbl138e
