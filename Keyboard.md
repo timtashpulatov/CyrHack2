@@ -1,7 +1,7 @@
 # Keyboard Resource
 Defined in UI/Src/Keyboard.c
 
-!Screenshot from 2023-05-10 19-29-13.png
+
 
 ```
 // These two structures also exist in MakeKbd.c.
