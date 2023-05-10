@@ -3,6 +3,10 @@ Defined in UI/Src/Keyboard.c
 
 !Screenshot from 2023-05-10 19-29-13.png
 
+Number of keyboards is fixed. In OS4.0, three keyboards are defined: Alpha, Punc/Number, and Int'l.
+
+Each keyboard can have multiple layouts. Typical Alpha keyboard has one layout, Punc/Number has three layouts.
+
 
 ```
 // These two structures also exist in MakeKbd.c.
