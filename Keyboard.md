@@ -1,12 +1,13 @@
 # Keyboard Resource
 Defined in UI/Src/Keyboard.c
 
-!AlphaKbd.png
-
 Number of keyboards is fixed. In OS4.0, three keyboards are defined: Alpha, Punc/Number, and Int'l.
+
+![pops](AlphaKbd.png)
 
 Each keyboard can have multiple layouts. Typical Alpha keyboard has one layout, Punc/Number has three layouts.
 
+![pops](NumKbd.png)
 
 ```
 // These two structures also exist in MakeKbd.c.
