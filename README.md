@@ -349,6 +349,7 @@ Most likely contains table for lowercase conversion
 ```
 
 ### ttbl1392
+Function TTGet8BitIndexedData () checks for 0x0001 at position 2, which means there is indexed data in the resource.
 ```
 00000000  00 09 00 01 e0 00 00 00  00 00 00 ff 00 00 00 00  |................|
 00000010  00 08 00 00 00 08 00 00  01 1a 01 01 01 01 01 01  |................|
