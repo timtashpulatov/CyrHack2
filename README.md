@@ -235,7 +235,7 @@ Next are offsets to records (005e, 0144, 0158, 0000, 0186).
 00000150  9f 05 02 8e 9e 15 01 83  00 08 c6 01 88 16 01 98  |................|
 00000160  00 20 13 02 96 97 05 0b  91 92 82 00 93 94 84 00  |. ..............|
 00000170  86 87 95 0e 01 85 0a 01  89 09 02 8b 9b 73 01 80  |.............s..|
-00000180  00 05 22 01 99 00 00 48  01 01 a8 0f 41 c0 c1 c2  |.."....H....AАБВ|
+00000180  00 05 22 01 99 00 00 48  01 01 a8 0f 41 c0 c1 c2  |.."....H..Ё.AАБВ|
 00000190  c3 c4 c5 c6 c7 c8 c9 ca  cb cc cd ce cf d0 d1 d2  |ГДЕЖЗИЙКЛМНОПРСТ|
 000001a0  d3 d4 d5 d6 d7 d8 d9 da  db dc dd de df e0 e1 e2  |УФХЦЧШЩЪЫЬЭЮЯабв|
 000001b0  e3 e4 e5 e6 e7 e8 e9 ea  eb ec ed ee ef f0 f1 f2  |гдежзийклмнопрст|
@@ -258,11 +258,11 @@ Most likely contains table for uppercase conversion
 000000a0  86 87 88 89 8a 8b 8c 8d  8e 8f 90 91 92 93 94 95  |................|
 000000b0  96 97 98 99 8a 9b 8c 9d  8e 9f a0 a1 a2 a3 a4 a5  |................|
 000000c0  a6 a7 a8 a9 aa ab ac ad  ae af b0 b1 b2 b3 b4 b5  |..Ё.............|
-000000d0  b6 b7 a8 b9 ba bb bc bd  be bf c0 c1 c2 c3 c4 c5  |..Ё.............|
-000000e0  c6 c7 c8 c9 ca cb cc cd  ce cf d0 d1 d2 d3 d4 d5  |................|
-000000f0  d6 d7 d8 d9 da db dc dd  de df c0 c1 c2 c3 c4 c5  |.........Я......|
-00000100  c6 c7 c8 c9 ca cb cc cd  ce cf d0 d1 d2 d3 d4 d5  |................|
-00000110  d6 d7 d8 d9 da db dc dd  de df                    |.........Я|
+000000d0  b6 b7 a8 b9 ba bb bc bd  be bf c0 c1 c2 c3 c4 c5  |..Ё.......АБВГДЕ|
+000000e0  c6 c7 c8 c9 ca cb cc cd  ce cf d0 d1 d2 d3 d4 d5  |ЖЗИЙКЛМНОПРСТУФХ|
+000000f0  d6 d7 d8 d9 da db dc dd  de df c0 c1 c2 c3 c4 c5  |ЦЧШЩЪЫЬЭЮЯАБВГДЕ|
+00000100  c6 c7 c8 c9 ca cb cc cd  ce cf d0 d1 d2 d3 d4 d5  |ЖЗИЙКЛМНОПРСТУФХ|
+00000110  d6 d7 d8 d9 da db dc dd  de df                    |ЦЧШЩЪЫЬЭЮЯ|
 ```
 
 ### ttbl138e
