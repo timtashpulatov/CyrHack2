@@ -22,6 +22,16 @@ Format and purpose for **ttbl** and **ttli** resources from Palm OS 4.x
 ```
 
 ### csli1388
+
+From System/IncsPrv/IntlPrv.h:
+```
+typedef struct _IntlLMCharsetListType IntlLMCharsetListType;
+struct _IntlLMCharsetListType
+{
+        UInt16                  numCharsets;  // number of following IntlLMCharsetEntryType records.
+        IntlLMCharsetEntryType  charsets[0];  // Variable number of character sets.
+};
+```
 Contains encoding names, like 'us-ascii', 'iso8859-1' etc.
 ```
 00000000  00 1e 75 73 2d 61 73 63  69 69 00 01 41 53 43 49  |..us-ascii..ASCI|
