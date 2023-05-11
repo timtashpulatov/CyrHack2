@@ -39,6 +39,33 @@ struct _IntlLMTableResType
 00000070  00 34 74 74 62 6c 13 95  00 3c 74 53 54 4c 13 88  |.4ttbl...<tSTL..|
 00000080  00 48 63 73 6c 69 13 88  00 4c                    |.Hcsli...L|
 ```
+```
+// Loop over all of the table resources, locking & setting up pointers in
+        // the IntlMgr global data structure.
+        tableListH = DmGet1Resource(kIntlLMTableListType, kIntlLMTableListResID);
+        if (tableListH != NULL)
+        {
+                IntlLMTableEntryType* curTable;
+                UInt8* globalsP = (UInt8*)GIntlMgrGlobalsP;
+                IntlLMTableResType* tableListP = (IntlLMTableResType*)MemHandleLock(tableListH);
+                
+                for (index = 0, curTable = tableListP->resources; index < tableListP->numResources; index++, curTable++)
+                {
+                        void** ptrLocation;
+                        MemHandle tableH;
+                        
+                        tableH = DmGet1Resource(curTable->resType, curTable->resID);
+                        ErrFatalDisplayIf(tableH == NULL, "Missing table resource from locale module");
+                        ErrFatalDisplayIf(curTable->tableIndex >= intlLMNumTableIndexes, "Invalid table index");
+                        
+                        ptrLocation = (void**)(globalsP + kIntlGlobalOffsets[curTable->tableIndex]);
+                        ErrFatalDisplayIf(*ptrLocation != NULL, "Resource overriding existing table ptr");
+                        *ptrLocation = MemHandleLock(tableH);
+                }                
+                MemHandleUnlock(tableListH);
+        }
+```
+
 
 ### csli1388
 
