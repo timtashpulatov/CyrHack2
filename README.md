@@ -10,6 +10,25 @@ Format and purpose for **ttbl** and **ttli** resources from Palm OS 4.x
 
 ### ttli1388
 ```
+// One entry that maps from a resource type/id to an IntlMgr global struct field.
+typedef struct _IntlLMTableEntryType IntlLMTableEntryType;
+struct _IntlLMTableEntryType
+{
+        DmResType               resType;
+        DmResID                 resID;
+        UInt16                  tableIndex;
+};
+
+// Format of the locale module table resource list ('lmod'=32767) resource.
+typedef struct _IntlLMTableResType IntlLMTableResType;
+struct _IntlLMTableResType
+{
+        UInt16                  numResources;           // number of IntlLMTableEntryType that follow:
+        IntlLMTableEntryType resources[0];      // variable number of resources.
+};
+```
+
+```
 00000000  00 11 74 74 62 6c 13 88  00 08 74 74 62 6c 13 89  |..ttbl....ttbl..|
 00000010  00 40 74 74 62 6c 13 8a  00 44 74 74 62 6c 13 8b  |.@ttbl...Dttbl..|
 00000020  00 6c 74 74 62 6c 13 8c  00 70 74 74 62 6c 13 8d  |.lttbl...pttbl..|
