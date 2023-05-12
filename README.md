@@ -289,6 +289,7 @@ Most likely contains table for lowercase conversion
 ```
 
 ### ttbl138f
+Likely indexed 8-bit sorting table
 ```
 00000000  00 01 02 03 04 05 06 07  08 2a 2b 2c 2d 2e 09 0a  |.........*+,-...|
 00000010  0b 0c 0d 0e 0f 10 11 12  13 14 15 16 17 18 19 1a  |................|
